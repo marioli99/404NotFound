@@ -14,6 +14,7 @@ header h3{
 }
 
 main{
+    color: rgba(51, 51, 51, 1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,7 +34,7 @@ main img {
 .container h1{
     font-size: 3rem;
     font-weight: 700;
-    
+    color: rgba(51, 51, 51, 1);
 }
 
 .container p { 
@@ -41,6 +42,7 @@ main img {
     font-size: 1.1rem;
     width: 29vw;
     padding: 8% 0 8% 0;
+    color: rgba(79, 79, 79, 1);
 
 }
 
@@ -54,7 +56,62 @@ button {
 }
 
 footer{
-    font-size: 0.5rem;
+    color: rgba(189, 189, 189, 1);
+    font-size: 0.6rem;
     text-align: center;
     padding: 2%;
+}
+a { 
+    text-decoration: none;
+    color: rgba(189, 189, 189, 1);
+}
+
+@media screen and (max-width:1205px) {
+
+    .container p {
+        width: 35vw;
+        font-size: 1rem;
+    }
+
+    button{
+        width: 20vw;
+    }
+}
+
+@media screen and (max-width:970px){
+    
+   main img{
+    height: 50vh;
+    width: 35vw;
+   }
+
+   button{
+    width: 30vw;
+   }
+}
+
+@media screen and (max-width: 768px){
+
+   header h3{
+        font-size: 1.3rem;
+        padding-bottom: 15%;
+    }
+    main{
+        flex-direction: column;
+    }
+
+    main img{
+        width: 64vw;
+        height: 60vh;
+
+    }
+    
+    .container p {
+        width: 90vw;
+        font-size: 2.5;
+    }
+
+    button { 
+        width: 50vw;
+    }
 }
